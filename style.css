@@ -1,0 +1,296 @@
+body{
+  font-family: Tahoma,Serif;
+  margin: 0;
+  padding: 0;
+  }
+
+.container-1{
+  background:url('../img/background.jpg')no-repeat center/*Ось X*/ center/*Ось Y*//cover/*Покрыть весь эран*/;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.showcase-top{
+ height: 10em;
+ width: 100%;
+ display: block;
+ text-align: center;
+ justify-content: center;
+ padding-bottom: 30px;
+}
+
+.navbar{ /*Синяя полоска*/
+  background-color: #2dcbff;
+  overflow: hidden;
+  height: 63px;
+  text-shadow: black 0 0 10px;
+}
+
+.navbar a{
+  float:left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: serif;
+}
+
+
+.navbar ul{
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.navbar a:hover{/*Анимация при наведении*/
+ box-shadow: inset 0 0 0 23px #ddd;
+ background-color: #ddd;
+ color: #000;
+}
+
+
+.side-nav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color: #4682B4;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.9s;
+}
+
+.side-nav a{ /*Ссылки внутри всплывающего окна*/
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{/*Кнопка закрытия всплывающего окна*/
+  position: absolute;
+  top:0;
+  right: 22px;
+  font-size:36px;
+  margin-left: 50px;
+}
+
+#main{
+  transition: margin-Left 0.5s;
+  padding: 60px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 55px;
+  font-family: Georgia, serif;
+  padding-top: 100px;
+  color: #4682B4;
+}
+
+.home-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 90px;
+  margin: 10%;
+  grid-gap: 150px;
+}
+
+.home-cards h3{
+  text-align: center;
+}
+
+.home-cards p{
+  line-height: 30px;
+  white-space: pre-line;
+}
+
+
+
+
+/*Tabs*/
+.tabs{/*Фон под кнопки(Сeрый)*/
+  padding-top: 1rem;
+  border-bottom: 3px solid #2dcbff;
+  background: 	#4682B4;
+}
+
+.tabs .container{/*FLEXBOX*/
+  display: grid;/*Отоброжаема сетка(Чтобы значки были вряд по ширине)*/
+  grid-template-columns: repeat(2, 1fr);/*Tabs в 3 столбика*/
+  /*Данные парамметры ,часто используется FLEXBOX*/
+  grid-gap: 1rem;/*Зазор сетки(промежуток между ними)*/
+  align-items: center;/*Выровнять элементы по центру*/
+  justify-content: center;/*Содержимое по центру*/
+  text-align: center;/*Текстовая строка*/
+}
+
+.tabs p{ /*Настройки текста под кнопками(Вкладками)*/
+  font-size: 1.2rem;/*Размер текста под кнопками*/
+  padding-top: 0.5rem;/*Отступ текста от значков кнопок*/
+}
+
+.tabs .container > div { /*Отступы вкладок(Кнопок) от границ(Верх/Низ)*/
+  padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover { /*(Эффект)При наведении на вкладки цвет подсвечивается белым*/
+  color: #fff;
+  cursor: pointer;
+}
+
+/*Tab Content*/
+.tab-content{/*Настройки Вкладки*/
+  padding: 3rem 0;
+  background: #F0F8FF;
+  color: black;
+}
+
+
+/*Hide content initially(Изначально скрыть содержимое)*/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content{
+  display: none;
+}
+
+.show{ /*Отоброжение контента в 1 вкладке(Получить класс шоу на правльном контенте)*/
+  display: block !important;
+}
+
+
+#tab-1-content .tab-1-content-inner p{
+  text-align: center;
+  font-size: 30px;
+}
+
+#tab-2-content .text-center p{
+  text-align: center;
+  font-size: 30px;
+}
+
+.table{
+  width: 100%;
+  margin-top: 2rem;
+  /*Убрать разделения между таблицами в строке*/
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table thead th{
+  text-transform: uppercase;/*Текст был верхним*/
+  padding: 0.8rem;
+
+}
+
+.table tbody tr td{/*Текст тела таблицы*/
+  color: black;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid;
+  border-color: #2dcbff;
+}
+
+.table tbody tr td:first-child{/*First-child-оставляет галочки на месте, по центру*/
+  text-align: left;/*Выравнивание таблицы по левой стороне*/
+}
+
+.my-form{
+  text-align: center;
+  background: #4682B4;
+}
+
+.form-group{
+  padding-bottom: 40px;
+  display: inline-block;
+}
+
+.my-form .form-group p{
+ width: 350%;
+ padding-bottom: 20px;
+ font-size: 25px;
+}
+
+.my-form input[type="submit"]{
+  background-color: black;
+  color: white;
+}
+
+.my-form input[type="submit"]:hover{
+  background: #ddd;
+  color: black;
+}
+
+#main-footer{
+  display: inline;
+}
+
+#main-footer p{
+  text-align: center;
+  background: #F0F8FF;
+}
+
+    #tab-1-content .tab-1-content-inner{/*Содержание вкладки 1(класс на который мы помещаем сетку)*/
+      grid-template-columns: 1fr; /*Столбцы шаблона сетки*/
+      text-align: center;
+    }
+
+    #tab-2-content .tab-2-content-top {
+  		display: block;
+  		text-align: center;
+  	}
+
+@media(max-width: 500px) {
+
+  .showcase-top img{
+    height: 200px;
+    width: 300px;
+  }
+
+  .navbar{
+    height: 50px;
+  }
+
+  .navbar-nav a{
+    font-size: 15px;
+  }
+
+  .nav-bar ul{
+      font-size: 15px;
+  }
+
+
+  .container-1{
+    height: 400px;
+  }
+
+  .tab-item .hide-sm{
+    font-size: 15px;
+
+  }
+
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  h1{
+    font-size: 20px;
+  }
+
+  .my-form .form-group p{
+    text-align: justify;
+    padding-right: 120px;
+  }
+}
