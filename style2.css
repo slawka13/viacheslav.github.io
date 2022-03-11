@@ -1,0 +1,207 @@
+body{
+  font-family: Tahoma,Serif;
+  margin: 0;
+  padding: 0;
+  background:url('../img/background3.jpg')/*Покрыть весь эран*/;
+}
+
+.showcase-top{
+ height: 10em;
+ width: 100%;
+ text-align: center;
+ justify-content: center;
+ padding-bottom: 20px;
+}
+
+.navbar-1 ul{
+  margin: 28px 0 0 0;
+  list-style: none;
+}
+
+.navbar-2 ul{
+  margin: 28px 0 0 0;
+  list-style: none;
+}
+
+.navbar-3 ul{
+  padding-top: 10px;
+  margin: 28px 0 0 0;
+  list-style: none;
+}
+
+.navbar-1 li{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.navbar-2 li{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.navbar-3 li{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.navbar-1 a{
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 50px;
+  text-shadow: #2dcbff 0 0 10px;
+}
+
+.navbar-2 a{
+  text-decoration: none;
+  font-size: 50px;
+  color: black;;
+  margin-bottom: 50px;
+  text-shadow: #2dcbff 0 0 10px;
+}
+
+.navbar-3 a{
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 50px;
+  text-shadow: #2dcbff 0 0 10px;
+}
+
+.navbar-1 a:hover{
+  color: #2dcbff;
+  background: #D3D3D3;
+}
+
+.navbar-2 a:hover{
+  color: #2dcbff;
+  background: #D3D3D3;
+}
+
+.navbar-3 a:hover{
+  color: #2dcbff;
+  background: #D3D3D3;
+}
+
+
+
+.navbar-1 p{
+  color: white;
+  text-shadow: black 0 0 10px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+  text-indent: 10px;
+  white-space: pre-line;
+  word-break: keep-all;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.navbar-2 p{
+  color: white;
+  text-shadow: black 0 0 10px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+  text-indent: 10px;
+  white-space: pre-line;
+  word-break: keep-all;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.navbar-3 p{
+  color: white;
+  text-shadow: black 0 0 10px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  text-indent: 10px;
+  white-space: pre-line;
+  word-break: keep-all;
+  padding: 30px;
+  padding-top: 10;
+}
+
+.container-1{
+  text-align: center;
+  height: 800px;
+  padding: 100px;
+}
+
+
+.container-2{
+  text-align: center;
+  height:800px;
+  padding: 100px;
+}
+
+.container-3{
+  text-align: center;
+  height: 500px;
+  padding: 150px;
+}
+
+
+@media(max-width: 500px){
+
+  .showcase-top img{
+    height: 200px;
+    width: 300px;
+  }
+
+  .navbar-1 .navbar-1-nav a{
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+
+   .navbar-1 .navbar-1-nav p{
+     font-size: 15px;
+     text-align: justify;
+     margin: 0;
+     padding: 0;
+     line-height: 12px;
+   }
+
+   .navbar-2 .navbar-2-nav a{
+     font-size: 20px;
+     text-align: justify;
+     margin: 0;
+     padding: 0;
+   }
+
+    .navbar-2 .navbar-2-nav p{
+      font-size: 15px;
+      text-align: justify;
+      margin: 0;
+      padding: 0;
+      line-height: 12px;
+
+
+    }
+
+    .navbar-3 .navbar-3-nav a{
+      font-size: 20px;
+      text-align: justify;
+      margin: 0;
+      padding: 0;
+    }
+
+     .navbar-3 .navbar-3-nav p{
+       font-size: 15px;
+       text-align: justify;
+       margin: 0;
+       padding: 0;
+       line-height: 14px;
+
+
+
+     }
+
+
+
+
+}
